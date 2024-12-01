@@ -17,3 +17,9 @@
  * input: []
  * output: ""
  */
+
+const transformCollectionToString = function(collection) {
+    return collection.join(' | ') || '';
+};
+
+export default transformCollectionToString;
