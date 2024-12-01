@@ -18,6 +18,11 @@
  * output: ""
  */
 
+/**
+ * Transform collection into string
+ * @param {Array} collection 
+ * @returns string
+ */
 const transformCollectionToString = function(collection) {
     return collection.join(' | ') || '';
 };
