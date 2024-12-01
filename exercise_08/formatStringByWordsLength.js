@@ -16,3 +16,19 @@
  * CASE #2 * input: "This is short one."
  * output: "this is short one."
  */
+
+/**
+ * Check number of words contained in given string
+ * @param {string} sentence 
+ * @returns string
+ */
+const formatStringByWordsLength = function(sentence) {
+    const totalWords = sentence.split(' ').length;
+    
+    if (totalWords > 5) {
+        return sentence.toUpperCase();
+    }
+    return sentence.toLowerCase();
+};
+
+export default formatStringByWordsLength;
